@@ -1,29 +1,49 @@
-.container {
-  @apply absolute md:static duration-300 top-0 right-[-253px] self-end pl-[32px] md:pl-[48px] xl:pl-[164px] pt-[33.95px] md:pt-[39px] xl:pt-[52px] md:pr-[48px] xl:pr-[220px] flex flex-col items-end w-fit gap-[64.95px] h-full md:h-[auto];
-  background-color: rgba(255, 255, 255, 0.04);
-  backdrop-filter: blur(81.5485px);
+.header {
+  @apply flex justify-between md:items-center md:pl-[24px] xl:pl-[73.3px];
 
-  .close {
-    @apply w-fit mr-[26.45px] md:absolute md:hidden;
+  img {
+    @apply w-[40px] h-[40px] md:w-[48px] md:h-[48px] xl:w-[64px] xl:h-[64px];
   }
 
-  .links {
-    @apply w-full flex flex-col md:flex-row justify-between gap-[32px] md:gap-[37px] xl:gap-[64px];
+  .line {
+    @apply absolute hidden xl:relative xl:block left-[70px];
+  }
 
-    .section {
-      @apply xl:flex pr-[88px] md:pr-0 md:pb-[37px] xl:pb-[46.67px] text-white text-base md:text-[14px] xl:text-[21.3px] font-barlow md:leading-[17px] tracking-[2.7px] md:tracking-[2.36px] xl:tracking-[3.6px] border-solid border-r-4 md:border-b-[3px] md:border-r-0 border-[transparent] hover:border-[rgba(255,255,255,0.5)] duration-200;
+  .button {
+    @apply relative z-10 md:absolute md:hidden;
+  }
 
-      .number {
-        @apply font-bold mr-[11px] md:absolute md:hidden xl:static xl:block;
+  .navContainer {
+    @apply absolute md:static w-full h-full md:w-fit top-0 left-0 overflow-hidden;
+
+    .container {
+      @apply absolute md:static duration-300 top-0 z-20 right-[-253px] pl-[32px] md:pl-[48px] md:pr-[46px] pt-[33.95px] xl:pl-[164px] xl:pt-[48px] xl:pr-[212px] self-end flex flex-col items-end w-fit gap-[64.95px] h-full md:h-[auto];
+      background-color: rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(81.5485px);
+
+      .close {
+        @apply w-fit mr-[26.45px] relative z-40 md:absolute md:hidden;
+      }
+
+      .links {
+        @apply w-full flex flex-col md:flex-row justify-between gap-[32px] md:gap-[37px] xl:gap-[66.67px];
+
+        .section {
+          @apply xl:flex pr-[88px] md:pr-0 md:pb-[37px] xl:pb-[43px] text-white text-base md:text-[14px] xl:text-[21.3px] font-barlow md:leading-[17px] tracking-[2.7px] md:tracking-[2.36px] xl:tracking-[3.6px] border-solid border-r-4 md:border-b-[3px] md:border-r-0 border-[transparent] hover:border-[rgba(255,255,255,0.5)] duration-200;
+
+          .number {
+            @apply font-bold mr-[11px] md:absolute md:hidden xl:static xl:block;
+          }
+        }
+
+        .section.active {
+          @apply border-white;
+        }
       }
     }
 
-    .section.active {
-      @apply border-white;
+    .container.open {
+      @apply right-0 duration-300;
     }
   }
-}
-
-.container.open {
-  @apply right-0 duration-300;
 }

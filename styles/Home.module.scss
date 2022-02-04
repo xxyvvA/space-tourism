@@ -1,5 +1,5 @@
 .index {
-  @apply h-full relative overflow-hidden p-[24px] md:p-0 xl:pt-[40px] flex flex-col gap-[48px] md:gap-[106px] xl:gap-[251px] bg-homeMobile md:bg-homeTablet xl:bg-homeDesk xl:bg-cover bg-no-repeat;
+  @apply h-full relative p-[24px] md:p-0 xl:pt-[40px] flex flex-col gap-[48px] md:gap-[106px] xl:gap-[251px] bg-homeMobile md:bg-homeTablet xl:bg-homeDesk xl:bg-cover bg-no-repeat;
   background-size: 100%;
 
   .main {
@@ -22,13 +22,13 @@
     }
 
     .explore {
-      @apply relative w-[150px] h-[150px] md:w-[242px] md:h-[242px] xl:w-[274px] xl:h-[274px] flex justify-center items-center bg-white text-bg rounded-full font-bellefair text-[20px] md:text-[32px];
+      @apply relative z-10 w-[150px] h-[150px] md:w-[242px] md:h-[242px] xl:w-[274px] xl:h-[274px] flex justify-center items-center bg-white text-bg rounded-full font-bellefair text-[20px] md:text-[32px];
     }
   }
 }
 
 .destination {
-  @apply h-full relative overflow-hidden p-[24px]  md:p-0 xl:pt-[40px] flex flex-col gap-[24px] md:gap-[40px] xl:gap-[76px] bg-destinationMobile md:bg-destinationTablet xl:bg-destinationDesk bg-no-repeat;
+  @apply h-full relative p-[24px] md:p-0 xl:pt-[40px] flex flex-col gap-[24px] md:gap-[40px] xl:gap-[76px] bg-destinationMobile md:bg-destinationTablet xl:bg-destinationDesk bg-no-repeat;
   background-size: 100%;
 
   .main {
@@ -60,7 +60,7 @@
           }
 
           input + label {
-            @apply text-grey text-[14px] md:text-base pb-[8px] md:pb-[12px] font-barlow border-b-[3px] border-[transparent] leading-[17px] xl:leading-[19px] tracking-[2.36px] md:tracking-[2.7px] mr-[-2.36px] md:mr-[-2.7px];
+            @apply hover:border-[rgba(255,255,255,0.5)] text-grey text-[14px] md:text-base pb-[8px] md:pb-[12px] font-barlow border-b-[3px] border-[transparent] leading-[17px] xl:leading-[19px] tracking-[2.36px] md:tracking-[2.7px] mr-[-2.36px] md:mr-[-2.7px];
           }
 
           input:checked + label {
@@ -97,21 +97,5 @@
         }
       }
     }
-  }
-}
-
-.header {
-  @apply flex justify-between items-center md:absolute top-[24px] left-[39px] xl:top-[70px] xl:left-[73.3px] md:w-fit;
-
-  img {
-    @apply xl:w-[64px] xl:h-[64px] xl:mr-[85.3px];
-  }
-
-  .line {
-    @apply absolute hidden xl:static xl:block;
-  }
-
-  .button {
-    @apply md:absolute md:hidden;
   }
 }

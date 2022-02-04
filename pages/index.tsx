@@ -7,36 +7,12 @@ import NextLink from "next/link";
 import styles from "../styles/Home.module.scss";
 
 const Home: NextPage = () => {
-  const [open, setOpen] = useState(false);
-
   return (
     <>
       <Head />
 
       <div className={styles.index}>
-        <Navigation open={open} close={() => setOpen(false)} />
-
-        <header className={styles.header}>
-          <img src="/img/shared/logo.svg" className={styles.logo} alt="Space Travel Logo" />
-
-          <svg className={styles.line} width="630.6" height="3">
-            <path stroke="#979797" strokeWidth="1" d="M0,2 H630.6" />
-          </svg>
-
-          <button
-            className={styles.button}
-            style={{ color: "white" }}
-            onClick={() => {
-              setOpen(true);
-            }}
-          >
-            <svg width="24" height="21">
-              <path stroke="#D0D6F9" strokeWidth="3" d="M0,1.5 H24" />
-              <path stroke="#D0D6F9" strokeWidth="3" d="M0,10 H24" />
-              <path stroke="#D0D6F9" strokeWidth="3" d="M0,19 H24" />
-            </svg>
-          </button>
-        </header>
+        <Navigation />
 
         <main className={styles.main}>
           <div className={styles.content}>
