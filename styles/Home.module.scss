@@ -99,3 +99,71 @@
     }
   }
 }
+
+.crew {
+  @apply p-[24px] md:p-0 xl:pt-[40px] text-center xl:text-left flex flex-col gap-[24px] md:gap-[40px] xl:gap-[76px] max-h-[100vh] overflow-hidden bg-crewMobile md:bg-crewTablet xl:bg-crewDesk bg-no-repeat;
+  background-size: 100%;
+
+  .main {
+    @apply flex flex-col items-center xl:items-stretch gap-[32px] md:gap-[60px] xl:px-[212px];
+
+    .section {
+      @apply text-base md:text-[20px] xl:text-[28px] tracking-[2.7px] md:tracking-[3.38px] font-barlow text-white md:self-start md:ml-[38.5px] xl:ml-0;
+
+      .number {
+        @apply text-[rgba(255,255,255,0.25)] font-bold mr-4 xl:mr-[24px];
+      }
+    }
+
+    .content {
+      @apply md:flex md:flex-col-reverse xl:flex-row-reverse justify-between md:gap-[40px] xl:gap-[108.57px];
+      .imgContainer {
+        @apply border-b xl:relative xl:top-[-100px] md:border-none border-solid border-[#383B4B] flex justify-center;
+
+        img {
+          @apply w-[auto] h-[223px] md:h-[572px] xl:h-[712px];
+        }
+      }
+
+      .container {
+        @apply flex flex-col md:flex-col-reverse xl:items-start justify-center pt-[32px] md:pt-0 gap-[32px] md:gap-[40px] xl:gap-[120px];
+        .radio {
+          @apply flex justify-center gap-4;
+          input {
+            @apply absolute hidden;
+          }
+
+          input + label {
+            .label {
+              @apply w-[10px] h-[10px] xl:w-[15px] xl:h-[15px] bg-[#979797] opacity-[0.17] rounded-full;
+            }
+          }
+
+          input:checked + label {
+            .label {
+              @apply bg-white opacity-[1];
+            }
+          }
+        }
+
+        .crewDescription {
+          @apply flex flex-col gap-4 xl:gap-[27px] md:px-[90px] xl:px-0;
+          .spacing {
+            @apply flex flex-col gap-2 xl:gap-[15px];
+            .position {
+              @apply text-base md:text-[24px] xl:text-[32px] font-bellefair tracking-[0] leading-[18px] md:leading-[28px] xl:leading-[37px] text-[rgba(255,255,255,0.5)];
+            }
+
+            .name {
+              @apply text-[24px] md:text-[40px] xl:text-[56px] font-bellefair leading-[28px] md:leading-[46px] xl:leading-[64px] text-white;
+            }
+          }
+
+          .bio {
+            @apply text-[15px] md:h-[84px] xl:w-[444px] xl:h-[128px]  md:text-base xl:text-[18px] font-regBar leading-[25px] md:leading-[28px] xl:leading-[32px] text-grey;
+          }
+        }
+      }
+    }
+  }
+}

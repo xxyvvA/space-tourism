@@ -6,13 +6,13 @@ import Navigation from "../components/Navigation";
 import styles from "../styles/Home.module.scss";
 
 const Technology: NextPage = () => {
-  const [open, setOpen] = useState(false);
+  const [tech, setTech] = useState(false);
 
   return (
     <>
       <Head />
       <div className={styles.technology}>
-        <Navigation open={open} close={() => setOpen(false)} />
+        <Navigation />
       </div>
     </>
   );
