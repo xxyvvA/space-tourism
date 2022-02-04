@@ -60,7 +60,7 @@
           }
 
           input + label {
-            @apply hover:cursor-pointer hover:border-[rgba(255,255,255,0.5)] text-grey text-[14px] md:text-base pb-[8px] md:pb-[12px] font-barlow border-b-[3px] border-[transparent] leading-[17px] xl:leading-[19px] tracking-[2.36px] md:tracking-[2.7px] mr-[-2.36px] md:mr-[-2.7px];
+            @apply hover:cursor-pointer relative hover:border-[rgba(255,255,255,0.5)] text-grey text-[14px] md:text-base pb-[8px] md:pb-[12px] font-barlow border-b-[3px] border-[transparent] leading-[17px] xl:leading-[19px] tracking-[2.36px] md:tracking-[2.7px] mr-[-2.36px] md:mr-[-2.7px];
           }
 
           input:checked + label {
