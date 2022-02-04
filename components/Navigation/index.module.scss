@@ -29,7 +29,7 @@
         @apply w-full flex flex-col md:flex-row justify-between gap-[32px] md:gap-[37px] xl:gap-[66.67px];
 
         .section {
-          @apply xl:flex pr-[88px] md:pr-0 md:pb-[37px] xl:pb-[43px] text-white text-base md:text-[14px] xl:text-[21.3px] font-barlow md:leading-[17px] tracking-[2.7px] md:tracking-[2.36px] xl:tracking-[3.6px] border-solid border-r-4 md:border-b-[3px] md:border-r-0 border-[transparent] hover:border-[rgba(255,255,255,0.5)] duration-200;
+          @apply xl:flex pr-[88px] text-left md:pr-0 md:pb-[37px] xl:pb-[43px] text-white text-base md:text-[14px] xl:text-[21.3px] font-barlow md:leading-[17px] tracking-[2.7px] md:tracking-[2.36px] xl:tracking-[3.6px] border-solid border-r-4 md:border-b-[3px] md:border-r-0 border-[transparent] hover:border-[rgba(255,255,255,0.5)] duration-200;
 
           .number {
             @apply font-bold mr-[11px] md:absolute md:hidden xl:static xl:block;
