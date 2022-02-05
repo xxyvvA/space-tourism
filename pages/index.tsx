@@ -26,7 +26,9 @@ const Home: NextPage = () => {
           </div>
           <NextLink href="/destination" passHref>
             <a className={styles.explore}>
-              <div className={styles.hover}></div> EXPLORE
+              <div className={styles.spacing}>
+                <div className={styles.hover}>EXPLORE</div>
+              </div>
             </a>
           </NextLink>
         </main>
