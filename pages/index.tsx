@@ -12,26 +12,28 @@ const Home: NextPage = () => {
       <Head />
 
       <div className={styles.index}>
-        <Navigation />
+        <div className={styles.limit}>
+          <Navigation />
 
-        <main className={styles.main}>
-          <div className={styles.content}>
-            <p className={styles.hook}>SO, YOU WANT TO TRAVEL TO</p>
-            <h1>SPACE</h1>
-            <p>
-              Let&apos;s face it; if you want to go to space, you might as well genuinely go to
-              outer space and not hover kind of on the edge of it. Well sit back, and relax because
-              we&apos;ll give you a truly out of this world experience!
-            </p>
-          </div>
-          <NextLink href="/destination" passHref>
-            <a className={styles.explore}>
-              <div className={styles.spacing}>
-                <div className={styles.hover}>EXPLORE</div>
-              </div>
-            </a>
-          </NextLink>
-        </main>
+          <main className={styles.main}>
+            <div className={styles.content}>
+              <p className={styles.hook}>SO, YOU WANT TO TRAVEL TO</p>
+              <h1>SPACE</h1>
+              <p>
+                Let&apos;s face it; if you want to go to space, you might as well genuinely go to
+                outer space and not hover kind of on the edge of it. Well sit back, and relax
+                because we&apos;ll give you a truly out of this world experience!
+              </p>
+            </div>
+            <NextLink href="/destination" passHref>
+              <a className={styles.explore}>
+                <div className={styles.spacing}>
+                  <div className={styles.hover}>EXPLORE</div>
+                </div>
+              </a>
+            </NextLink>
+          </main>
+        </div>
       </div>
     </>
   );
