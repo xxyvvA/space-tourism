@@ -1,6 +1,4 @@
-import { useState } from "react";
 import type { NextPage } from "next";
-import Image from "next/image";
 import Head from "../components/Head";
 import Navigation from "../components/Navigation";
 import NextLink from "next/link";
