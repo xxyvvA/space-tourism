@@ -7,6 +7,7 @@ import crewmember from "../data.json";
 
 const Crew: NextPage = () => {
   const [crew, setCrew] = useState<"douglas" | "mark" | "victor" | "anousheh">("douglas");
+  //balls
   const member = crewmember.crew[crew];
 
   return (
