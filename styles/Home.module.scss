@@ -122,7 +122,7 @@
 }
 
 .crew {
-  @apply bg-crewMobile md:bg-crewTablet xl:bg-crewDesk bg-no-repeat;
+  @apply h-full bg-crewMobile md:bg-crewTablet xl:bg-crewDesk bg-no-repeat;
   background-size: cover;
 
   .limit {
