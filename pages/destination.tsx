@@ -6,13 +6,12 @@ import styles from "../styles/Home.module.scss";
 import data from "../data.json";
 
 const Destination: NextPage = () => {
-  const [open, setOpen] = useState(false);
   const [celestial, setCelestial] = useState<"moon" | "mars" | "europa" | "titan">("moon");
   const planet = data.destinations[celestial];
 
   return (
     <>
-      <Head />
+      <Head title={"Space Tourism - Destination"} />
       <div className={styles.destination}>
         <div className={styles.limit}>
           <Navigation />

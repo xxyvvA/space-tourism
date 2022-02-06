@@ -12,7 +12,7 @@ const Crew: NextPage = () => {
 
   return (
     <>
-      <Head />
+      <Head title={"Space Tourism - Crew"} />
       <div className={styles.crew}>
         <div className={styles.limit}>
           <Navigation />

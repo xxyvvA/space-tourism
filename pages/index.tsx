@@ -7,7 +7,7 @@ import styles from "../styles/Home.module.scss";
 const Home: NextPage = () => {
   return (
     <>
-      <Head />
+      <Head title={"Space Tourism - Homepage"} />
 
       <div className={styles.index}>
         <div className={styles.limit}>

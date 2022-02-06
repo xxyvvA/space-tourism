@@ -11,7 +11,7 @@ const Technology: NextPage = () => {
 
   return (
     <>
-      <Head />
+      <Head title={"Space Tourism - Technology"} />
       <div className={styles.technology}>
         <div className={styles.limit}>
           <Navigation />
