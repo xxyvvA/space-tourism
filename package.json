@@ -1,5 +1,5 @@
 {
-  "name": "rock-paper-scissors",
+  "name": "space-tourism-website",
   "private": true,
   "scripts": {
     "dev": "next dev",
